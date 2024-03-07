@@ -38,7 +38,7 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">info@uniquecarservices.com</a>
+        <i class="bi bi-envelope"></i> <a href="mailto:uniquecarservices@aol.com">uniquecarservices@aol.com</a>
         <i class="bi bi-phone"></i> 	01908 566 355
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">
@@ -63,7 +63,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About UCS</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#departments">Book your MOT</a></li>
+          <li><a class="nav-link scrollto" href="#appointment">Book your MOT</a></li>
           <li><a class="nav-link scrollto" href="#gallery">View Our Work</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -100,7 +100,8 @@
       <h2></h2>
       <a href="#about" class="btn-get-started scrollto">BOOK IN</a>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -160,7 +161,7 @@
 
         <div class="row">
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-            <a href="https://www.facebook.com/uniquecarservicesltd/videos/2386096988263952" class="glightbox play-btn mb-4"></a>
+            <a href="https://youtube.com/shorts/dg3AfNc3zw4?si=DOs7Vxfxh0KYK1Tu" class="glightbox play-btn mb-4"></a>
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
@@ -389,68 +390,121 @@
     <!-- End Services Section -->
 
     <!-- ======= Appointment Section ======= -->
-    <!-- <section id="appointment" class="appointment section-bg">
+    <section id="appointment" class="appointment section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Make an Appointment</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Book Your MOT</h2>
+          <p>Our professionals will perform brake services, replace and fit new tyres, carry out clutch fitting, service timing belts and chains, perform MOTs and annual servicing and diagnostics.</p>
         </div>
 
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+       <div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="5cb1b9c2-09ba-4dac-a5b4-d5163e341928">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="fullName" type="text" placeholder="Full Name" data-sb-validations="required" />
+            <label for="fullName">Full Name</label>
+            <div class="invalid-feedback" data-sb-feedback="fullName:required">Full Name is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="telephoneNumber" type="text" placeholder="Telephone Number" data-sb-validations="required" />
+            <label for="telephoneNumber">Telephone Number</label>
+            <div class="invalid-feedback" data-sb-feedback="telephoneNumber:required">Telephone Number is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+            <label for="emailAddress">Email Address</label>
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="address1" type="text" placeholder="Address 1 " data-sb-validations="required" />
+            <label for="address1">Address 1 </label>
+            <div class="invalid-feedback" data-sb-feedback="address1:required">Address 1 is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="address2" type="text" placeholder="address 2 " data-sb-validations="required" />
+            <label for="address2">address 2 </label>
+            <div class="invalid-feedback" data-sb-feedback="address2:required">address 2 is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="city" type="text" placeholder="City" data-sb-validations="required" />
+            <label for="city">City</label>
+            <div class="invalid-feedback" data-sb-feedback="city:required">City is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="postcode" type="text" placeholder="Postcode" data-sb-validations="required" />
+            <label for="postcode">Postcode</label>
+            <div class="invalid-feedback" data-sb-feedback="postcode:required">Postcode is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="make" type="text" placeholder="Make" data-sb-validations="required" />
+            <label for="make">Make</label>
+            <div class="invalid-feedback" data-sb-feedback="make:required">Make is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="model" type="text" placeholder="Model" data-sb-validations="required" />
+            <label for="model">Model</label>
+            <div class="invalid-feedback" data-sb-feedback="model:required">Model is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="year" type="text" placeholder="Year" data-sb-validations="required" />
+            <label for="year">Year</label>
+            <div class="invalid-feedback" data-sb-feedback="year:required">Year is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="mileage" type="text" placeholder="Mileage" data-sb-validations="required" />
+            <label for="mileage">Mileage</label>
+            <div class="invalid-feedback" data-sb-feedback="mileage:required">Mileage is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="licenseNumber" type="text" placeholder="License Number" data-sb-validations="required" />
+            <label for="licenseNumber">License Number</label>
+            <div class="invalid-feedback" data-sb-feedback="licenseNumber:required">License Number is required.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label d-block">Please categorize the service(s) needed:</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="mot" type="checkbox" name="pleaseCategorizeTheServiceSNeeded" data-sb-validations="required" />
+                <label class="form-check-label" for="mot">MOT</label>
             </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="serviceRepair" type="checkbox" name="pleaseCategorizeTheServiceSNeeded" data-sb-validations="required" />
+                <label class="form-check-label" for="serviceRepair">Service/Repair</label>
             </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="both" type="checkbox" name="pleaseCategorizeTheServiceSNeeded" data-sb-validations="required" />
+                <label class="form-check-label" for="both">Both</label>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+            <div class="invalid-feedback" data-sb-feedback="pleaseCategorizeTheServiceSNeeded:required">One option is required.</div>
+        </div>
+        <div class="form-floating mb-3">
+          <input class="form-control" id="date" type="date" placeholder="date" data-sb-validations="required" />
+          <label for="licenseNumber">preferred Date</label>
+          <div class="invalid-feedback" data-sb-feedback="date:required">License Number is required.</div>
+      </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control" id="additionalDetails" type="text" placeholder="Additional Details" style="height: 10rem;" data-sb-validations="required"></textarea>
+            <label for="additionalDetails">Additional Details</label>
+            <div class="invalid-feedback" data-sb-feedback="additionalDetails:required">Additional Details is required.</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
             </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="department" id="department" class="form-select">
-                <option value="">Select Department</option>
-                <option value="Department 1">Department 1</option>
-                <option value="Department 2">Department 2</option>
-                <option value="Department 3">Department 3</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select">
-                <option value="">Select Doctor</option>
-                <option value="Doctor 1">Doctor 1</option>
-                <option value="Doctor 2">Doctor 2</option>
-                <option value="Doctor 3">Doctor 3</option>
-              </select>
-              <div class="validate"></div>
-            </div>
-          </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Make an Appointment</button></div>
-        </form>
-
-      </div> -->
-    <!-- </section>End Appointment Section -->
+      </div>
+ </section>
+       <!--   End Appointment Section -->
 
     <!-- ======= Departments Section ======= -->
     <!-- <section id="departments" class="departments">
@@ -835,7 +889,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -856,7 +910,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            </form> -->
 
           </div>
 
