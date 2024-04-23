@@ -1347,6 +1347,8 @@ section {
   .faq .faq-list {
     padding: 0;
   }
+  .faq-image {
+    width: 25%; /* Adjust as needed */
 }
 
 /*--------------------------------------------------------------
