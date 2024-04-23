@@ -1348,13 +1348,10 @@ section {
     padding: 0;
   }
   .faq-image {
-    width: 55%; /* Adjust as needed */
+    display: none;  /* Adjust as needed */
 }
 
-@media (max-width: 1300px) {
-  .faq-image {
-    width: 20%; /* Adjust as needed */
-}
+
 
 }
 /*--------------------------------------------------------------
